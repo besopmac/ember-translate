@@ -1,0 +1,18 @@
+hello:
+  world: Olá, Mundo!
+
+greeting: 'Iaê, {name}!'
+
+download: |-
+  Download {type, select,
+    pro { {name} Professional}
+    trial { Versão-Teste por {name} }
+    other { {name} }
+  } de nosso website!
+
+flowers: |-
+  Você tem {itemCount, plural,
+    =0 {nenhuma flor}
+    one {uma flor}
+    other {{itemCount} flores}
+  }.

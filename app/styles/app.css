@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 2em 0;
+}
+
+ul li {
+  line-height: 2;
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  color: #c1c1c2;
+  font-weight: 600;  
+  margin: 15px 5px 0 0;
+  border-radius: 0.25rem;
+  padding: 0.35rem 0.5rem;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+button.active {
+  color: rgb(168, 136, 5);
+  background-color: rgb(255, 207, 14);
+}
+
+.myCounter {
+  padding: 1.5em;
+  display: inline-block;
+  border-radius: .75rem;
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+.myCounter p:not(:last-child) {
+  margin-bottom: .75em;
+}

@@ -1,1 +1,18 @@
-price_banner: The {product} costs {price, number, USD}
+hello:
+  world: Hello World!
+
+greeting: 'Hello, {name}!'
+
+download: |-
+  Download {type, select,
+    pro { {name} (full version) }
+    trial { the free trial of {name} }
+    other { {name} }
+  } from our web page!
+
+flowers: |-
+  You have {itemCount, plural,
+    =0 {no flowers}
+    one {one flower}
+    other {{itemCount} flowers}
+  }.

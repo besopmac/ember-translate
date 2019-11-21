@@ -1,1 +1,23 @@
+{{!-- <h1>{{t "hello.world"}}</h1> --}}
+<h1>{{t "greeting" name="John"}}</h1>
+
+<div>
+  {{#each selections as |model|}}
+    <button class={{if model.active 'active'}} {{action "changeLocale" model.locale}}>
+      {{model.locale}}
+    </button>
+  {{/each}}
+</div>
+
+<ul>
+  <li>{{t "download" name="BabelEdit" type="full"}}</li>
+  <li>{{t "download" name="BabelEdit" type="trial"}}</li>
+</ul>
+
+<div class="myCounter">
+  <p>{{t "flowers" itemCount=0}}</p>
+  <p>{{t "flowers" itemCount=1}}</p>
+  <p>{{t "flowers" itemCount=4}}</p>
+</div>
+
 {{outlet}}
